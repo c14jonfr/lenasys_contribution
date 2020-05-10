@@ -1,5 +1,7 @@
 # lenasys_contribution
 
+Demo available at https://c14jonfr.github.io/lenasys_contribution/
+
 This is a personal project created as a (temporary) replacement for the Personal Progress Tool used for the course Projekt i Software Engineering vid Högskolan i Skövde.
 
 There is a tool that is to be used to view your contribution statistics for the LenaSYS project (Personal Progress Tool) but this is currently not working. There are a few key differences between the Personal Progress Tool and this project:
