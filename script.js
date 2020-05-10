@@ -32,6 +32,9 @@ document.getElementById('getdata').addEventListener('click', (e) => {
   document.getElementById('issuecomments').innerHTML = 0;
   document.getElementById('issuescompleted').innerHTML = 0;
   
+  //sets the value of the text field to "guest" always. used for demonstrative purposes
+  document.getElementById('username').value = "guest";
+
   if(document.getElementById('username').value === "guest"){
     commitcount = 73;
     commentcount = 54;
