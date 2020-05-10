@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="githubstats.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>LenaSYS Contribution</title>
+</head>
+<body>
+  <div class="container">
+    <div class="content container">
+      <div class="windowheader">LenaSYS Contribution Statistics <div class="close-button">X</div></div>
+      <h1>Contribution statistics for <a href="https://github.com/HGustavs/LenaSYS" target="_blank"><span class="sys"><span class="lena">LENA</span>Sys</span></a></h1>
+      
+      <div class="inputdiv">
+        <h2>Username</h2>
+        <input type="text" id="username" value="guest">
+        <button id="getdata" class="button">go</button>
+      </div>
+
+      <div class="stats">
+        <h2><div class="color" style="background-color: lightblue;"></div> Commits <p id="commits">0</p></h2>
+        <h2><div class="color" style="background-color: blue;"></div> Issues created <p id="issuescreated">0</p></h2>
+        <h2><div class="color" style="background-color: green;"></div> Issues completed <p id="issuescompleted">0</p></h2>
+        <h2><div class="color" style="background-color: purple;"></div> Issue comments <p id="issuecomments">0</p></h2>
+      </div>
+      
+      
+  
+      <div class="progressbar" id="progressbar">
+        <div id="commit" class="progress" style="background-color: lightblue;"></div>
+        <div id="created" class="progress" style="background-color: blue;"></div>
+        <div id="completed" class="progress" style="background-color: green;"></div>
+        <div id="comment" class="progress" style="background-color: purple;"></div>
+      </div>
+      <div class="lds-ring" id="loader"><div></div><div></div><div></div><div></div></div>
+    </div>
+  </div>
+</body>
+</html>
