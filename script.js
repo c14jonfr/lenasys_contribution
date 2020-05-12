@@ -1,5 +1,9 @@
 let loading = 0;
 
+const headers = {
+  headers: {
+     Authorization: 'Token x' // replace "x" with your own Personal Access Token from GitHub
+  }};
 
 function getData(username){
   startLoading();
@@ -68,7 +72,7 @@ let commitcount = 0;
 
 
 function getCommits(username){
-  fetch('https://api.github.com/repos/HGustavs/LenaSYS/commits?author='+username+'&since=2020-03-30T00:00:00Z&page='+commitpagenr+'&per_page=100')
+  fetch('https://api.github.com/repos/HGustavs/LenaSYS/commits?author='+username+'&since=2020-03-30T00:00:00Z&page='+commitpagenr+'&per_page=100', headers)
   .then(response => response.json())
   .then(data => {
     console.log()
@@ -91,7 +95,7 @@ let issuescreatedcount = 0;
 let issuescreatedpagenr = 1;
 
 function getCreatedIssues(username){
-  fetch('https://api.github.com/repos/HGustavs/LenaSYS/issues?since=2020-03-30T00:00:00Z&state=all&per_page=100&page='+issuescreatedpagenr+'&creator='+username+'')
+  fetch('https://api.github.com/repos/HGustavs/LenaSYS/issues?since=2020-03-30T00:00:00Z&state=all&per_page=100&page='+issuescreatedpagenr+'&creator='+username+'', headers)
   .then(response => response.json())
   .then(data => {
     data.forEach(element => {
@@ -117,7 +121,7 @@ let commentcount = 0;
 let commentpagenr = 1;
 
 function getComments(username){
-  fetch('https://api.github.com/repos/HGustavs/LenaSYS/issues/comments?since=2020-03-30T00:00:00Z&page='+commentpagenr+'&per_page=100&author='+username+'')
+  fetch('https://api.github.com/repos/HGustavs/LenaSYS/issues/comments?since=2020-03-30T00:00:00Z&page='+commentpagenr+'&per_page=100&author='+username+'', headers)
   .then(response => response.json())
   .then(data => {
     data.forEach(element => {
@@ -142,7 +146,7 @@ let issuescompletedcount = 0;
 let issuescompletedpagenr = 1;
 
 function getCompletedIssues(username){
-  fetch('https://api.github.com/repos/HGustavs/LenaSYS/issues?since=2020-03-30T00:00:00Z&state=closed&per_page=100&page='+issuescompletedpagenr+'&assignee='+username+'')
+  fetch('https://api.github.com/repos/HGustavs/LenaSYS/issues?since=2020-03-30T00:00:00Z&state=closed&per_page=100&page='+issuescompletedpagenr+'&assignee='+username+'', headers)
   .then(response => response.json())
   .then(data => {
     data.forEach(element => {
