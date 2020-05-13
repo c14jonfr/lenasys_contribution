@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js" defer></script>
+  <script src="toplists.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>LenaSYS Contribution</title>
+</head>
+<body>
+  <header class="navheader">
+    <a href="index.html"><img src="personal.svg" alt=""></a>
+    <a href="toplists.html"><img src="all.svg" alt=""></a>
+  </header>
+  <div class="container">
+    <div class="content container">
+      <div class="windowheader">LenaSYS Contribution Statistics <div class="close-button">X</div></div>
+      <h1>Contribution statistics for <a href="https://github.com/HGustavs/LenaSYS" target="_blank"><span class="sys"><span class="lena">LENA</span>Sys</span></a></h1>
+      
+      <div class="inputdiv">
+        <h2>Username</h2>
+        <input type="text" id="username" value="guest">
+        <button id="getalldata" class="button">go</button>
+      </div>
+
+      <div class="toplists">
+        <div class="toplists1">
+          <div id="topcommits" style="opacity: 0">
+            <h2>Commits</h2>
+            <ol id="toplistcommits"></ol>
+            <p id="mycommits" style="display:none; font-weight: bold;"></p>
+          </div>
+    
+          <div id="topcreated" style="opacity: 0">
+            <h2>Issues created</h2>
+            <ol id="toplistcreated"></ol>
+            <p id="mycreated" style="display:none; font-weight: bold;"></p>
+          </div>
+        </div>
+
+        <div class="toplists2">
+          <div id="topcompleted" style="opacity: 0">
+            <h2>Issues completed</h2>
+            <ol id="toplistcompleted"></ol>
+            <p id="mycompleted" style="display:none; font-weight: bold;"></p>
+          </div>
+
+          <div id="topcomments" style="opacity: 0">
+            <h2>Issues comments</h2>
+            <ol id="toplistcomments"></ol>
+            <p id="mycomments" style="display:none; font-weight: bold;"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lds-ring" id="loader"><div></div><div></div><div></div><div></div></div>
+    </div>
+  </div>
+</body>
+</html>
