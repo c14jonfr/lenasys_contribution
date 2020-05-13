@@ -77,7 +77,6 @@ function getCommits(username){
   fetch('https://api.github.com/repos/HGustavs/LenaSYS/commits?author='+username+'&since=2020-03-30T00:00:00Z&page='+commitpagenr+'&per_page=100', headers)
   .then(response => response.json())
   .then(data => {
-    console.log(data)
     data.forEach(element => {
       commitcount++;
     });
