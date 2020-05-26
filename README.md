@@ -16,7 +16,7 @@ There is a tool that is to be used to view your contribution statistics for the 
 - As long as the loading animation is running things should be progressing, but keep an eye on the console. If anything goes wrong you should see an error there.
 
 ## This tool will display statistics for:
-- Commits (total number of commits that have been merged to the master branch, commits made to other branches will not count unless the branch is merged to the master branch)
+- Commits (total number of commits that have been merged to the master branch, commits made to other branches will not count unless the branch is merged to the master branch). As far as I can tell this includes merge commits, meaning users who have been part of the weekly merges will have inflated numbers
 - Issues created (total number of issues where you are the author)
 - Issues Completed (total number of issues that you are assigned to that have been *closed*)
 - Issue comments (total number of comments you have left on issues)
