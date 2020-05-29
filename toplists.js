@@ -132,7 +132,7 @@ function getAllCreated(repeatStudent, page){
       .then(data => {
         data.forEach(issue => {
           if(issue['html_url'].includes('issues')){
-            studentArray[studentArray.indexOf(student)].issuescreated++;
+            studentArray[studentArray.indexOf(repeatStudent)].issuescreated++;
           }
         })
         if(data.length === 100){
